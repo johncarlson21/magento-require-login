@@ -43,6 +43,18 @@
                                 <require_login>1</require_login>
                             </depends>
                         </require_login_whitelist>
+                        <require_login_store translate="label comment">
+                            <label>Require Login Store Code</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[Enter Store Code]]></comment>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <require_login>1</require_login>
+                            </depends>
+                        </require_login_whitelist>
                     </fields>
                 </startup>
             </groups>
