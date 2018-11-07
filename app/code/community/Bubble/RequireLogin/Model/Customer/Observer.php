@@ -11,7 +11,8 @@ class Bubble_RequireLogin_Model_Customer_Observer
     {
         $helper = Mage::helper('bubble_requirelogin');
         $session = Mage::getSingleton('customer/session');
-
+        $store = $helper->getLoginStore();
+        if (Mage::app()->getStore()->getId() != $store) { return; }
         if (!$session->isLoggedIn() && $helper->isLoginRequired()) {
             $controllerAction = $observer->getEvent()->getControllerAction();
             /* @var $controllerAction Mage_Core_Controller_Front_Action */
