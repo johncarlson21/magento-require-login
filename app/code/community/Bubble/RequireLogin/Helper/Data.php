@@ -17,7 +17,7 @@ class Bubble_RequireLogin_Helper_Data extends Mage_Core_Helper_Abstract
         return Mage::getStoreConfig('bubble_requirelogin/startup/require_login_whitelist', $store);
     }
     
-    pubic function getLoginStore() {
+    public function getLoginStore() {
         return Mage::getStoreConfig('bubble_requirelogin/startup/require_login_store', $store);
     }
 }
