@@ -54,7 +54,7 @@
                             <depends>
                                 <require_login>1</require_login>
                             </depends>
-                        </require_login_whitelist>
+                        </require_login_store>
                     </fields>
                 </startup>
             </groups>
